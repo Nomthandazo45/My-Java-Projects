@@ -4,20 +4,32 @@ public class StudentGradeCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // asking marks obtained in each subject
-        System.out.print("Enter marks obtained in biology: ");
+        System.out.print("Enter marks obtained in Biology: ");
         int biologyMarks = scanner.nextInt();
 
-        System.out.print("Enter marks obtained in geography: ");
+        System.out.print("Enter marks obtained in Geography: ");
         int geographyMarks = scanner.nextInt();
 
-        System.out.print("Enter marks obtained in chemistry: ");
-        int chemistryMarks = scanner.nextInt();
+        System.out.print("Enter marks obtained in Physics: ");
+        int physicsMarks = scanner.nextInt();
+
+        System.out.print("Enter marks obtained in Mathematics: ");
+        int mathematicsMarks = scanner.nextInt();
+
+        System.out.print("Enter marks obtained in Life Orientation: ");
+        int lifeorientationMarks = scanner.nextInt();
+
+        System.out.print("Enter marks obtained in English: ");
+        int englishMarks = scanner.nextInt();
+
+        System.out.print("Enter marks obtained in Sesotho: ");
+        int sesothoMarks = scanner.nextInt();
 
         scanner.close();
         
         // setting up values
-        int totalMarks = biologyMarks + geographyMarks + chemistryMarks;
-        int numberOfSubjects = 3; // Assuming there are 3 subjects
+        int totalMarks = biologyMarks + geographyMarks + physicsMarks + mathematicsMarks + lifeorientationMarks + englishMarks + sesothoMarks;
+        int numberOfSubjects = 7;
         double averagePercentage = (double) totalMarks / numberOfSubjects;
 
         String grade;
@@ -39,3 +51,4 @@ public class StudentGradeCalculator {
         System.out.println("Grade: " + grade);
     }
 }
+
